@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, useCssModule, watch } from "vue";
 
-const CARD_BACK = `src/assets/img/card-back.png`;
+const CARD_BACK = `public/img/card-back.png`;
 
 const props = defineProps<{
   index: number;
@@ -31,7 +31,7 @@ const isOpened = ref(false);
 
 const imgSrc = computed(() => {
   if (props.code) {
-    return `src/assets/img/card-${props.code}.png`;
+    return `public/img/card-${props.code}.png`;
   } else {
     return CARD_BACK;
   }
