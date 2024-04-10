@@ -3250,7 +3250,7 @@ function el(e) {
   return W(e) ? document.querySelector(e) : e;
 }
 const tl = ["src"],
-  Os = "card/img/card-back.png",
+  Os = "/card/img/card-back.png",
   nl = qt({
     __name: "TheCard",
     props: { index: {}, code: {} },
@@ -3262,7 +3262,7 @@ const tl = ["src"],
         i = ot(),
         o = ot(!1),
         c = ot(!1),
-        u = ut(() => (t.code ? `card/img/card-${t.code}.png` : Os)),
+        u = ut(() => (t.code ? `/card/img/card-${t.code}.png` : Os)),
         d = () => {
           (o.value = !1), (c.value = !0);
         };
